@@ -5,11 +5,11 @@ const path = require('path');
 
 app.get("/", (req, res) => {
     const url = req.originalUrl;
-    res.sendFile("./html/homepage.html");
+    res.sendFile('html/homepage.html',{root: __dirname });
 })
 app.get("/login", (req, res) => {
     const url = req.originalUrl;
-    res.sendFile("./html/loginpage.html");
+    res.sendFile('/html/loginpage.html',{root: __dirname });
 })
 
 app.listen(process.env.PORT || port, () => {
