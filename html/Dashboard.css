@@ -1,0 +1,94 @@
+.maincontainer{
+    display: flex;
+}
+#dashboard{
+    position: relative;
+    top: 0px;
+    color: white;
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+}
+#dashboard::before{
+    content: "";
+    background-color: #2D333F;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#dashboard ul li{
+    list-style: none;
+    padding: 20px;
+    font-size: 22px;
+}
+#dashboard ul li a, .semester a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+#dashboard ul .home a:hover{
+    color: rgb(80, 70, 70);
+    background-color: white;
+    border-radius: 5px; 
+    width: 60px;
+}
+#dashboard ul .about a:hover{
+    color: rgb(80, 70, 70);
+    background-color: white;
+    border-radius: 5px; 
+    width: 90px;
+}
+#dashboard ul .contact a:hover{
+    color: rgb(80, 70, 70);
+    background-color: white;
+    border-radius: 5px; 
+    width: 100px;
+}
+#dashboard ul .logout a:hover{
+    color: rgb(80, 70, 70);
+    background-color: white;
+    border-radius: 5px; 
+    width: 80px;
+}
+.semester a:hover{
+    color: rgb(80, 70, 70);
+    background-color: white;
+    border-radius: 5px; 
+}
+.semester{
+    margin: 80px;
+    font-size: 22px;
+}
+
+
+#container-1{
+    height: 370px;
+    width: 650px;
+    background-color: blue;
+    margin-top: 50px;
+    margin-left: 350px;
+}
+#container-2{
+    height: 370px;
+    width: 650px;
+    background-color: green;
+    margin-top: -386px;
+    margin-left: 1050px;
+}
+#container-3{
+    height: 370px;
+    width: 650px;
+    background-color: grey;
+    margin-bottom: 0px;
+    margin-left: 350px;
+}
+#container-4{
+    height: 370px;
+    width: 650px;
+    background-color: orange;
+    margin-top: -386px;
+    margin-left: 1050px;
+}
