@@ -20,3 +20,4 @@ app.listen(process.env.PORT || port, () => {
 	console.log("listening 8080...");
 });
 
+app.use('/html', express.static(path.join(__dirname, "html")));
