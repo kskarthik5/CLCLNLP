@@ -4,12 +4,7 @@ const port = 8080;
 const path = require('path');
 
 app.get("/", (req, res) => {
-    const url = req.originalUrl;
-    res.sendFile("./html/homepage.html");
-})
-app.get("/login", (req, res) => {
-    const url = req.originalUrl;
-    res.sendFile("./html/loginpage.html");
+    res.sendFile(path.join(__dirname, ${url}));
 })
 
 app.listen(process.env.PORT || port, () => {
