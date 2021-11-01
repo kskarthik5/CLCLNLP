@@ -26,4 +26,4 @@ app.use('/html', express.static(path.join(__dirname, "html")));
 app.use('/css', express.static(path.join(__dirname, "css")));
 app.use('/js', express.static(path.join(__dirname, "js")));
 app.use('/img', express.static(path.join(__dirname, "img")));
-app.use('/', express.static(path.join(__dirname, "")));
+app.use('/style.css', express.static(path.join(__dirname, "style.css")))
