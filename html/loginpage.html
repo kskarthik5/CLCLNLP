@@ -35,7 +35,7 @@
 		<link rel="stylesheet" href="css/responsive.css">
 
 		<!-- modernizr css -->
-		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script type="text/javascript" src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
 		<body>
 
@@ -164,12 +164,12 @@
                             <div class="login-form">
                                 <h4 class="login-title">LOGIN</h4>
                                 <div class="row">
-                                    <form id="contactForm" method="POST" action="http://rockstheme.com/rocks/aievari-live/contact.php" class="log-form">
+                                    <form id="contactForm" method="POST" action="/dashboard" class="log-form">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="text" id="name" class="form-control" placeholder="Username" required data-error="Please enter your name">
+                                            <input type="text" id="username" class="form-control" placeholder="Username" required data-error="Please enter your name">
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <input type="password" id="msg_subject" class="form-control" placeholder="Password" required data-error="Please enter your message subject">
+                                            <input type="password" id="password" class="form-control" placeholder="Password" required data-error="Please enter your message subject">
                                         </div>
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <div class="check-group flexbox">
@@ -189,10 +189,39 @@
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <div class="clear"></div>
                                            
-                                                <div class="acc-not">Don't have an account  <a href="signup.html"> Sign up</a></div>
+                                                <div class="acc-not">Don't have an account  <a href="/signup"> Sign up</a></div>
                                             </div> 
                                         </div> 
                                     </form> 
+                                    <script>
+                                        const form = document.getElementById('contactForm')
+                                        form.addEventListener('submit', login)
+                            
+                                        async function login(event) {
+                                            event.preventDefault()
+                                            const username = document.getElementById('username').value
+                                            const password = document.getElementById('password').value
+                            
+                                            const result = await fetch('/', {
+                                                method: 'POST',
+                                                headers: {
+                                                    'Content-Type': 'application/json'
+                                                },
+                                                body: JSON.stringify({
+                                                    username,
+                                                    password
+                                                })
+                                            }).then((res) => res.json())
+                            
+                                            if (result.status === 'ok') {
+                                                // everythign went fine
+                                                alert('Logged in as \''+username+'\'');
+                                                window.location.href = "/dashboard";
+                                            } else {
+                                                alert(result.error)
+                                            }
+                                        }
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -207,25 +236,25 @@
 		<!-- all js here -->
 
 		<!-- jquery latest version -->
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-1.12.4.min.js"></script>
 		<!-- bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<!-- owl.carousel js -->
-		<script src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		  <!-- stellar js -->
-        <script src="js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 		<!-- magnific js -->
-        <script src="js/magnific.min.js"></script>
+        <script type="text/javascript" src="js/magnific.min.js"></script>
         <!-- wow js -->
-        <script src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
         <!-- meanmenu js -->
-        <script src="js/jquery.meanmenu.js"></script>
+        <script type="text/javascript" src="js/jquery.meanmenu.js"></script>
 		<!-- Form validator js -->
-		<script src="js/form-validator.min.js"></script>
+		<script type="text/javascript" src="js/form-validator.min.js"></script>
 		<!-- plugins js -->
-		<script src="js/plugins.js"></script>
+		<script type="text/javascript" src="js/plugins.js"></script>
 		<!-- main js -->
-		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 
 <!-- Mirrored from rockstheme.com/rocks/aievari-live/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Mar 2020 08:27:42 GMT -->
