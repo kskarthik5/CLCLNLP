@@ -23,4 +23,5 @@ app.listen(process.env.PORT || port, () => {
 });
 
 app.use('/html', express.static(path.join(__dirname, "html")));
-
+app.use('/css', express.static(path.join(__dirname, "css")));
+app.use('/', express.static(path.join(__dirname, "./")));
