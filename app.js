@@ -3,6 +3,8 @@ const app = express();
 const port = 8080;
 const path = require('path');
 
+
+
 app.get("/", (req, res) => {
     const url = req.originalUrl;
     res.sendFile('html/homepage.html',{root: __dirname });
@@ -21,3 +23,4 @@ app.listen(process.env.PORT || port, () => {
 });
 
 app.use('/html', express.static(path.join(__dirname, "html")));
+
