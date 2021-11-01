@@ -24,4 +24,6 @@ app.listen(process.env.PORT || port, () => {
 
 app.use('/html', express.static(path.join(__dirname, "html")));
 app.use('/css', express.static(path.join(__dirname, "css")));
-app.use('/', express.static(path.join(__dirname, "./")));
+app.use('/js', express.static(path.join(__dirname, "js")));
+app.use('/img', express.static(path.join(__dirname, "img")));
+app.use('/', express.static(path.join(__dirname, "")));
