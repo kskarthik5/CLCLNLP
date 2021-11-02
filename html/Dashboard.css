@@ -1,94 +1,213 @@
-.maincontainer{
-    display: flex;
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&amp;display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
-#dashboard{
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar navbar navbar navbar"
+    "sidebar section section section section"
+    "sidebar footer footer footer footer";
+}
+
+.navbar {
+  grid-area: navbar;
+  height: 8vh;
+  /* background-color: rgb(61, 61, 61); */
+  background-color: #151b2c;
+  position: relative;
+}
+
+.navbar ul li {
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.4vh;
+  font-size: 2.7rem;
+  color: white;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  width: 20vw;
+  /* background-color: rgb(156, 155, 155); */
+  background-color: #d1dcfb;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.sidebar a.active {
+  /* background-color: rgb(75, 75, 75); */
+  background-color: #1d2746;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  /* background-color: rgb(126, 126, 126); */
+  background-color: #212e55;
+  color: white;
+}
+
+.section {
+  grid-area: section;
+  /* height: 82vh; */
+}
+
+.section ul {
+  margin-left: 8vw;
+  margin-top: 2vh;
+}
+
+.section ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  height: 9.3vh;
+  text-align: center;
+  /* background-color: rgb(61, 61, 61); */
+  background-color: #151b2c;
+  bottom: 0;
+  position: fixed;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.footer p {
+  margin-top: 3vh;
+  color: white;
+}
+
+.box {
+  /* background-color: green; */
+  /* border: 2px solid black; */
+}
+
+@media (min-width: 100px) and (max-width: 825px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "navbar"
+      "sidebar"
+      "section"
+      "footer";
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    width: 100vw;
+    background-color: rgb(156, 155, 155);
     position: relative;
-    top: 0px;
-    color: white;
-    width: 290px;
-    height: 100vh;
-    position: fixed;
-    left: 0px;
-}
-#dashboard::before{
-    content: "";
-    background-color: #2D333F;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-#dashboard ul li{
+    /* height: 100%; */
+    overflow: auto;
+  }
+  .sidebar ul {
+    display: flex;
     list-style: none;
-    padding: 20px;
-    font-size: 22px;
-}
-#dashboard ul li a, .semester a{
-    color: white;
-    display: block;
+    flex-wrap: wrap;
+  }
+  .sidbar ul li {
+      font-size: 1rem;
+  }
+  .sidebar a {
+    display: flex;
+    color: black;
+    padding: 15px;
     text-decoration: none;
+    font-size: 1.3rem;
+  }
+  .section {
+    grid-area: section;
+  }
+  .section ul {
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+  }
+  .footer {
+    grid-area: footer;
+    /* height: 8vh;
+    text-align: center;
+    background-color: rgb(61, 61, 61);
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    margin-right: 1000vw; */
+    display: none;
+  }
+  .footer p {
+    /* margin-top: 5vh; */
+    /* color: white; */
+  }
+
+  .new-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-align: center;
+  }
+
+  .new-footer p{
+    margin-top: 3%;
+  }
+
 }
 
-#dashboard ul .home a:hover{
-    color: rgb(80, 70, 70);
-    background-color: white;
-    border-radius: 5px; 
-    width: 60px;
-}
-#dashboard ul .about a:hover{
-    color: rgb(80, 70, 70);
-    background-color: white;
-    border-radius: 5px; 
-    width: 90px;
-}
-#dashboard ul .contact a:hover{
-    color: rgb(80, 70, 70);
-    background-color: white;
-    border-radius: 5px; 
-    width: 100px;
-}
-#dashboard ul .logout a:hover{
-    color: rgb(80, 70, 70);
-    background-color: white;
-    border-radius: 5px; 
-    width: 80px;
-}
-.semester a:hover{
-    color: rgb(80, 70, 70);
-    background-color: white;
-    border-radius: 5px; 
-}
-.semester{
-    margin: 80px;
-    font-size: 22px;
+@media (min-width: 825px) and (max-width: 940px) {
+  .section ul {
+    margin-left: 14vw;
+    margin-top: 2vh;
+  }
 }
 
+@media (min-width: 940px) and (max-width: 1050px) {
+  .section ul {
+    margin-left: 13vw;
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 1050px) and (max-width: 1160px) {
+  .section ul {
+    margin-left: 12vw;
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 1160px) and (max-width: 1580px) {
+  .section ul {
+    margin-left: 10vw;
+    margin-top: 2vh;
+  }
+}
 
-#container-1{
-    height: 370px;
-    width: 650px;
-    background-color: blue;
-    margin-top: 50px;
-    margin-left: 350px;
+.footer a{
+    background-color: white;    
+    /* margin-top: 3vh; */
 }
-#container-2{
-    height: 370px;
-    width: 650px;
-    background-color: green;
-    margin-top: -386px;
-    margin-left: 1050px;
+
+.footer a i{
+    margin-top: 1.2vh;
 }
-#container-3{
-    height: 370px;
-    width: 650px;
-    background-color: grey;
-    margin-bottom: 0px;
-    margin-left: 350px;
-}
-#container-4{
-    height: 370px;
-    width: 650px;
-    background-color: orange;
-    margin-top: -386px;
-    margin-left: 1050px;
+
+.fa{
+    width: 2.7rem;
 }
