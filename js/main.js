@@ -37,14 +37,6 @@ windows.on('scroll', function() {
 /*---------------------
  wow .js
 --------------------- */
-    function wowAnimation(){
-        new WOW({
-            offset: 100,          
-            mobile: true
-        }).init()
-    }
-    wowAnimation()	
-    
 /*--------------------------
  scrollUp
 ---------------------------- */
@@ -80,9 +72,6 @@ windows.on('scroll', function() {
  MagnificPopup
 ---------------------------- */	
 	
-    $('.video-play').magnificPopup({
-        type: 'iframe'
-    });
     
 /*--------------------------
      slider carousel
@@ -137,7 +126,6 @@ windows.on('scroll', function() {
 ------------------------------ */
 	$("#contactForm").on("submit", function (event) {
 		if (event.isDefaultPrevented()) {
-			formError();
 			submitMSG(false, "Did you fill in the form properly?");
 		} else {
 			event.preventDefault();
@@ -169,12 +157,6 @@ windows.on('scroll', function() {
 	function formSuccess(){
 		$("#contactForm")[0].reset();
 		submitMSG(true, "Message Submitted!")
-	}
-
-	function formError(){
-		$("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			$(this).removeClass();
-		});
 	}
 
 	function submitMSG(valid, msg){
