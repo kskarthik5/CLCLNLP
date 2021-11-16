@@ -88,6 +88,9 @@
                                     <ul id="navigation">                                                                                          
                                         <li><a href="/Dashboard">Home</a></li>
                                         <li><a href="/about">About</a></li>
+                                       
+                                        <li style="margin-left:890px" id="logoutbutton" ><a href="/">Logout</a></li>
+                                        
                                         <!-- <li><a href="/courses">Courses</a></li> -->
                                         <!-- <li><a href="instructor.html">Instructors</a></li> -->
                                         <!-- <li><a href="blog.html">Blog</a>
@@ -99,6 +102,8 @@
                                         </li> -->
                                         <!-- <li><a href="contact.html">Contact</a></li> -->
                                     </ul>
+                                    
+                                   
                                 </nav>
                             </div>
                             <!-- Header-btn -->
@@ -177,11 +182,6 @@
             <div class="container">
                 <div class="row justify-content-sm-center" style="margin-top: -100px;">
                     <div class="cl-xl-7 col-lg-8 col-md-10">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-70">
-                            <!-- <span>Popular Online Courses</span> -->
-                            <h2>Lets Brows All Catagories</h2>
-                        </div> 
                     </div>
                 </div>
                 <div class="row">
@@ -219,6 +219,18 @@
                                 <h5><a  href="/courses/python">Python</a></h5>
                                 <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
                                 <a  href="/courses/python" class="read-more1">View Courses ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-cat mb-50">
+                            <div class="cat-icon">
+                                <span class="flaticon-communications"></span>
+                            </div>
+                            <div class="cat-cap">
+                                <h5><a  href="/courses/sem3">Semester III</a></h5>
+                                <p>Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.</p>
+                                <a  href="/courses/sem3" class="read-more1">View Courses ></a>
                             </div>
                         </div>
                     </div>
@@ -801,6 +813,12 @@
     <!-- Jquery Plugins, main Jquery -->	
     <script type="text/javascript" src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    
+    <script>
+        var form = document.getElementById('logoutbutton')
+        form.addEventListener('submit', login)
+        async function login(event) {
+            localStorage.setItem({token: null});
+        }
+    </script>
     </body>
 </html>

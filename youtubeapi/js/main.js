@@ -65,11 +65,13 @@ $(document).ready(function () {
     //Loop through results and display them on the dom.
     function resultsLoop(data) {
         $.each(data.items, function (i, item) {
-
+            var count=1;
             var thumb = item.snippet.thumbnails.medium.url;
             var title = item.snippet.title;
             var vid = item.snippet.resourceId.videoId;
-
+            if(count==1)
+            displayVid(vid)
+            count++;
             if (item.snippet.description.length > 100) {
                 var desc = item.snippet.description.substring(0, 100) + ' ...';
             } else {

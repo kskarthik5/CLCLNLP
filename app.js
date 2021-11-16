@@ -66,7 +66,7 @@ app.post('/', async (req, res) => {
 	res.json({ status: 'error', error: 'Invalid username/password' })
 })
 app.post('/signup', async (req, res) => {
-	const {name,username, password:plainTextPassword, institution, language} = req.body
+	const {name,username, password:plainTextPassword, sem, language} = req.body
 
 	if (!username || typeof username !== 'string') {
 		return res.json({ status: 'error', error: 'Invalid username' })
@@ -81,7 +81,7 @@ app.post('/signup', async (req, res) => {
 			name,
             username,
 			password,
-			institution,
+			sem,
 			language
 		})
 		console.log('User created successfully.', response)
@@ -128,7 +128,6 @@ app.get("/courses/:id", (req, res) => {
 })
 app.post("/courses/:id",async (req, res) => {
     const lang=req.params.id;
-	console.log(lang);
 	const url = req.originalUrl;
 	if(lang=='cpp'){
 	const result=material.cpp;
@@ -141,6 +140,10 @@ app.post("/courses/:id",async (req, res) => {
 	if(lang=='python'){
 	const result=material.python;
     res.json({data: result});
+	}
+	if(lang=='sem3'){
+	const result=material.sem3;
+	res.json({data: result});
 	}
 })
 app.get("/dashboard", (req, res) => {
@@ -167,6 +170,10 @@ app.post("/courses/:id/player/:no",async (req, res) => {
 	if(lang=='python'){
 	const result=material.python;
     res.json({data: result[num]});
+	}
+	if(lang=='sem3'){
+	const result=material.sem3;
+	res.json({data: result[num]});
 	}
 })
 app.listen(process.env.PORT || port, () => {

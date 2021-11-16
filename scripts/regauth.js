@@ -7,7 +7,7 @@ async function registerUser(event) {
     const password = document.getElementById('password').value
     const name = document.getElementById('name').value
     const language = document.getElementById('language').value
-    const institution= document.getElementById('institution').value
+    const sem= document.getElementById('institution').value
     const result = await fetch('/signup', {
         method: 'POST',
         headers: {
@@ -15,7 +15,7 @@ async function registerUser(event) {
         },
         body: JSON.stringify({
             name,username,
-            password, institution, language
+            password, sem, language
         })
     }).then((res) => res.json())
 

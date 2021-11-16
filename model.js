@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
       },  
-    institution: {
+    sem: {
         type: String,
         required: true,
       },
