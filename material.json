@@ -1,15 +1,16 @@
 {
     "cpp": [
     {"title": "INTRODUCTION TO C++ PROGRAMMING","vlink":"PLwXbGyE9aR4MiC9xrqUn209a3wV9Ciaab"},
-    {"title": "Designing GUI applications with GTK","vlink":"PL6A4216D6C8E00CFC"}
+    {"title": "DESIGNING GUI APPLICATIONS WITH GTK","vlink":"PL2i17lRog5pBe7t9zJdFdugQ6bxgjntJD"}
     ],
     "java":[
     {"title":"INTRODUCTION TO JAVA PROGRAMMING","vlink":"PLwXbGyE9aR4O1fKj9wlDU6SBS8SUvBLYa"}
+    {"title":"GUI USING JAVA","vlink":"PLsyeobzWxl7pVZdyDXj0arOdTzo4MYekh"}
     ],
     "python":
     [
     {"title": "INTRODUCTION TO PYTHON PROGRAMMING","vlink":"PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"},
-         {"title": "basic concept of phython ","vlink":""}
+         {"title": "GUI USING PYTHON ","vlink":"PLwXbGyE9aR4OUMbxkKjy61WcOTX-PPNoN"}
     ],
     "SEMESTER III":
     [
