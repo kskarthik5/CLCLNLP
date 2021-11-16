@@ -27,3 +27,26 @@ async function registerUser(event) {
         alert(result.error)
     }
 }
+
+data={
+    "cpp": [
+    {"title": "INTRODUCTION TO C++ PROGRAMMING","vlink":"PLwXbGyE9aR4MiC9xrqUn209a3wV9Ciaab"},
+    {"title": "DESIGNING GUI APPLICATIONS WITH GTK","vlink":"PL2i17lRog5pBe7t9zJdFdugQ6bxgjntJD"}
+    ],
+    "java":[
+    {"title":"INTRODUCTION TO JAVA PROGRAMMING","vlink":"PLwXbGyE9aR4O1fKj9wlDU6SBS8SUvBLYa"},
+    {"title":"GUI USING JAVA","vlink":"PLsyeobzWxl7pVZdyDXj0arOdTzo4MYekh"}
+    ],
+    "python":
+    [
+    {"title": "INTRODUCTION TO PYTHON PROGRAMMING","vlink":"PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"},
+         {"title": "GUI USING PYTHON ","vlink":"PLwXbGyE9aR4OUMbxkKjy61WcOTX-PPNoN"}
+    ],
+    "SEMESTER III":
+    [
+        {"title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
+        {"title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
+        {"title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
+        {"title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
+    ]
+}
