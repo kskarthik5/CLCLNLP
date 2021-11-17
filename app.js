@@ -143,6 +143,10 @@ app.post("/courses/:id",async (req, res) => {
 	const result=material.python;
     res.json({data: result});
 	}
+	if(lang=='js'){
+	const result=material.js;
+	res.json({data: result});
+	}
 	if(lang=='sem3'){
 	const result=material.sem3;
 	res.json({data: result});
@@ -172,6 +176,10 @@ app.post("/courses/:id/player/:no",async (req, res) => {
 	if(lang=='python'){
 	const result=material.python;
     res.json({data: result[num]});
+	}
+	if(lang=='js'){
+	const result=material.js;
+	res.json({data: result[num]});
 	}
 	if(lang=='sem3'){
 	const result=material.sem3;

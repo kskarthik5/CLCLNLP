@@ -58,7 +58,7 @@ p {
   padding: 10px 14px;
   border-radius: 4px;
   width: 370px;
-  margin-right:-101vw;
+  margin-right:-170vw;
   text-align:center;
   background-color:white;
   color:black;
@@ -82,7 +82,7 @@ header, footer, section {
   z-index: 10; }
 
   footer{
-    width:10vw
+    width:10vw;
     margin-right:0px;
     border:none;
   }
@@ -92,7 +92,7 @@ section {
 footer {
   /* position: relative;  */
   position: absolute; 
-  background-color:black;
+  background-color: #efefef;
   /* margin-right: -200px; */
 }
 
@@ -284,5 +284,5 @@ section{
   height:0px;
 }
 body{
-  background-color:black;
+  background-color: #efefef;
 }
