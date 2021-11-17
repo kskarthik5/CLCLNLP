@@ -45,7 +45,6 @@ app.get("/dashboard", (req, res) => {
 })
 app.post('/', async (req, res) => {
 	const { username, password } = req.body
-    console
 	const user = await User.findOne({ username }).lean()
 
 	if (!user) {
@@ -57,10 +56,13 @@ app.post('/', async (req, res) => {
 		const token = jwt.sign(
 			{
 				id: user._id,
-				username: user.username
+				username: user.username,
+				name: user.name,
+				sem: user.sem
 			},
 			JWT_SECRET
 		)
+		console.log(token)
 		return res.json({ status: 'ok', data: token })
 	}
 	res.json({ status: 'error', error: 'Invalid username/password' })
@@ -174,6 +176,24 @@ app.post("/courses/:id/player/:no",async (req, res) => {
 	if(lang=='sem3'){
 	const result=material.sem3;
 	res.json({data: result[num]});
+	}
+})
+app.post('/db', async (req, res) => {
+	const { token } = req.body;
+	console.log(token);
+	try {
+	
+		const user =jwt.verify(token, JWT_SECRET)
+		console.log(user);
+		const username = user.username;
+		const name=user.name;
+		const sem=user.sem;
+		console.log("user: "+username+" name: "+name+" SEM "+sem);
+		res.json({ data : JSON.stringify({
+			username,name,sem
+		})});
+	} catch (error) {
+		res.json({ status: error});
 	}
 })
 app.listen(process.env.PORT || port, () => {
