@@ -3,7 +3,7 @@
     {"title": "INTRODUCTION TO C++ PROGRAMMING","vlink":"PLwXbGyE9aR4MiC9xrqUn209a3wV9Ciaab"},
     {"title": "DESIGNING GUI APPLICATIONS WITH GTK","vlink":"PL2i17lRog5pBe7t9zJdFdugQ6bxgjntJD"},
     {"title": "GAME DEVELOPMENT WITH C++","vlink":"PLv8DnRaQOs58puPPWHXuGHJOtKVduVcct"},
-    {"title": "WEB WITH C++","vlink":"PLzTP3s658k6_4WmEEwOhm-vOR2_RolHLr"}, 
+    {"title": "WEB WITH C++","vlink":"PLzTP3s658k6_4WmEEwOhm-vOR2_RolHLr"}
     ],
     "java":[
     {"title":"INTRODUCTION TO JAVA PROGRAMMING","vlink":"PLwXbGyE9aR4O1fKj9wlDU6SBS8SUvBLYa"},
@@ -18,14 +18,14 @@
     {"title": "WEB DEV USING DJANGO PYTHON ","vlink":"PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3"},
     {"title": "INTRODUCTION TO DATA SCIENCE USING PYTHON ","vlink":"PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV"},
     {"title": "INTRODUCTION TO MACHINE LEARNING USING PYTHON ","vlink":"PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v"},
-    {"title": "APP DEV USING FLUTTER ","vlink":"PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ"},
+    {"title": "APP DEV USING FLUTTER ","vlink":"PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ"}
     ],
     "javascript":
     [
         {"title": "INTROUCTION TO JAVASCRIPT","vlink":"PLqq-6Pq4lTTYFJxC9NLJ7dSTI5Z1WWB6K"},
         {"title": "WEB DEVLOPMENT USING JAVASCRIPT","vlink":"PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV"},
         {"title": "NODE JS AND EXPRESS JS TUTORIAL","vlink":"PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU"},
-        {"title": "REACT JS TUTORIAL","vlink":"PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3"},  
+        {"title": "REACT JS TUTORIAL","vlink":"PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3"}  
     ],
     "sem3":
     [
