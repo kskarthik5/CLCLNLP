@@ -19,7 +19,10 @@ async function login(event) {
 
     if (result.status === 'ok') {
         // everythign went fine
+        console.log(result.data)
         alert('Logged in as \''+username+'\'');
+        
+        localStorage.setItem('token',result.data)
         window.location.href = "/dashboard";
     } else {
         alert(result.error)
