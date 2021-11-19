@@ -109,6 +109,17 @@ app.post('/auth', async (req, res) => {
 		res.json({ status: 'error'});
 	}
 })
+app.post("/getSem", async (req, res) => {
+	const { token } = req.body;
+	try {
+		const user = jwt.verify(token, JWT_SECRET)
+		const sem = user.sem;
+		res.json({data : sem});
+	} catch (error) {
+		console.log(error)
+		res.json({ status: 'error'});
+	}
+})
 app.get("/", (req, res) => {
     const url = req.originalUrl;
     res.sendFile('/html/loginpage.html',{root: __dirname });
@@ -132,24 +143,36 @@ app.post("/courses/:id",async (req, res) => {
     const lang=req.params.id;
 	const url = req.originalUrl;
 	if(lang=='cpp'){
-	const result=material.cpp;
-    res.json({data: result});
+		const result=material.cpp;
+    	res.json({data: result});
 	}
 	if(lang=='java'){
-	const result=material.java;
-    res.json({data: result});
+		const result=material.java;
+    	res.json({data: result});
 	}
 	if(lang=='python'){
-	const result=material.python;
-    res.json({data: result});
+		const result=material.python;
+    	res.json({data: result});
 	}
 	if(lang=='js'){
-	const result=material.js;
-	res.json({data: result});
+		const result=material.js;
+		res.json({data: result});
 	}
 	if(lang=='sem3'){
-	const result=material.sem3;
-	res.json({data: result});
+		const result=material.sem3;
+		res.json({data: result});
+	}
+	if(lang=='sem4'){
+		const result=material.sem4;
+		res.json({data: result});
+	}
+	if(lang=='sem5'){
+		const result=material.sem5;
+		res.json({data: result});
+	}
+	if(lang=='sem6'){
+		const result=material.sem6;
+		res.json({data: result});
 	}
 })
 app.get("/dashboard", (req, res) => {
@@ -184,6 +207,18 @@ app.post("/courses/:id/player/:no",async (req, res) => {
 	if(lang=='sem3'){
 	const result=material.sem3;
 	res.json({data: result[num]});
+	}
+	if(lang=='sem4'){
+		const result=material.sem4;
+		res.json({data: result[num]});
+	}
+	if(lang=='sem5'){
+		const result=material.sem5;
+		res.json({data: result[num]});
+	}
+	if(lang=='sem6'){
+		const result=material.sem6;
+		res.json({data: result[num]});
 	}
 })
 app.post('/db', async (req, res) => {
