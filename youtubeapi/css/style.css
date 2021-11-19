@@ -53,17 +53,17 @@ p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2;
   font-weight: 500;
+  /* color: black; */
   color: #2f3940;
   border: 1px solid #b4babe;
   padding: 10px 14px;
+  /* border: 2px solid black; */
   border-radius: 4px;
-<<<<<<< HEAD
   width: 20vw;
   margin-right:-167vw;
-=======
+
   width: 370px;
   margin-right:-170vw;
->>>>>>> 5d70b94f53ac9afd57e6458b36162963d2b55f13
   text-align:center;
   background-color:white;
   color:black;
@@ -151,8 +151,8 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 370px 4px 10px;
-  border-left: 1px solid #b4babe;
-  border-right: 1px solid #b4babe;
+  /* border-left: 1px solid #b4babe; */
+  /* border-right: 1px solid #b4babe; */
   text-align: center; 
   margin-left:67.5vw;
   margin-top:-40vh;
@@ -288,17 +288,14 @@ header{
 section{
   height:0px;
 }
-<<<<<<< HEAD
+
 body, footer{
   background-color: white;
 }
 
 footer{
   width: 67.5vw;
+  opacity: 0.8;
   /* background-color: black;
   height: 10vh; */
-=======
-body{
-  background-color: #efefef;
->>>>>>> 5d70b94f53ac9afd57e6458b36162963d2b55f13
 }
