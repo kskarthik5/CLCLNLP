@@ -57,8 +57,8 @@ p {
   border: 1px solid #b4babe;
   padding: 10px 14px;
   border-radius: 4px;
-  width: 370px;
-  margin-right:-101vw;
+  width: 20vw;
+  margin-right:-167vw;
   text-align:center;
   background-color:white;
   color:black;
@@ -140,7 +140,7 @@ footer {
   width: 110px; }
 
 main {
-  max-width: 800px;
+  max-width: 33vw;
   background-color: #f6f6f6;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -149,8 +149,8 @@ main {
   border-left: 1px solid #b4babe;
   border-right: 1px solid #b4babe;
   text-align: center; 
-  margin-left:1300px;
-  margin-top:-370px;
+  margin-left:67.5vw;
+  margin-top:-40vh;
 }
 
 article {
@@ -206,19 +206,19 @@ article {
   word-break: break-word; }
 
 .wrapper {
-  max-width: 60vw;
+  max-width: 65vw;
   overflow: hidden;
   margin: 0 auto;
-  margin-top: -3vh;
+  margin-top: -6vh;
  }
 
 .videoWrapper {
   position: absolute;
-  padding-bottom: 40%;
+  padding-bottom: 42.1%;
   width: 67.5vw;
  
   /* 16:9 */
-  padding-top: 12px;
+  padding-top: -3vh;
   height: 0; }
 
 .videoWrapper iframe {
@@ -283,6 +283,12 @@ header{
 section{
   height:0px;
 }
-body{
-  background-color:black;
+body, footer{
+  background-color: white;
+}
+
+footer{
+  width: 67.5vw;
+  /* background-color: black;
+  height: 10vh; */
 }
