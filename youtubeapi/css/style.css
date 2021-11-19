@@ -294,8 +294,8 @@ body, footer{
 }
 
 footer{
-  width: 67.5vw;
-  opacity: 0.8;
+  width: 0vw;
+  opacity: 1;
   /* background-color: black;
   height: 10vh; */
 }
