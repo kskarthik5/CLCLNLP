@@ -69,16 +69,17 @@ app.post('/', async (req, res) => {
 })
 app.post('/signup', async (req, res) => {
 	const {name,username, password:plainTextPassword, sem, language} = req.body
-
-	if (!username || typeof username !== 'string') {
-		return res.json({ status: 'error', error: 'Invalid username' })
-	}
-	if (username == await User.findOne({ username }).lean()) {
-		return res.json({ status: 'error', error: 'Invalid username' })
-	}
 	const password = await bcrypt.hash(plainTextPassword, 10)
-
 	try {
+		if (!username || typeof username !== 'string') {
+			return res.json({ status: 'error', error: 'Invalid username' })
+		}
+		if (username == await User.findOne({ username }).lean()) {
+			return res.json({ status: 'error', error: 'Invalid username' })
+		}
+		if (parseInt(sem)>8||parseInt(sem)<1) {
+			return res.json({ status: 'error', error: 'Invalid Semester' })
+		}
 		const response = await User.create({
 			name,
             username,
@@ -94,8 +95,8 @@ app.post('/signup', async (req, res) => {
 		}
 		throw error
 	}
+		return res.json({ status: 'ok' })
 
-	res.json({ status: 'ok' })
 })
 app.post('/auth', async (req, res) => {
 	const { token } = req.body;
