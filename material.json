@@ -36,23 +36,28 @@
     ],
     "sem4":
     [
-        {"title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
-        {"title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
-        {"title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
-        {"title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
+        {"title": "DESIGN AND ANALYSIS OF ALGORITHMS (DAA)","vlink":"PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa"},
+        {"title": "OPERATING SYSTEM (OS)","vlink":"PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"},
+        {"title": "COMPUTER NETWORKS (CN)","vlink":"PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"},
+        {"title": "COMPUTER GRAPHICS (CG)","vlink":"PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T"}    
     ],
     "sem5":
     [
-        {"title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
-        {"title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
-        {"title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
-        {"title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
+        {"title": "THEORY OF COMPUTATION (TOC)","vlink":"PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev"},
+        {"title": "INTRODUCTION TO INTELLIGENT SYSTEMS (AI)","vlink":"PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI"},
+        {"title": "ADVANCED OPERATING SYSTEM (AOS)","vlink":"PLAwxTw4SYaPkKfusBLVfklgfdcB3BNpwX"},
+        {"title": "ADVANCED DBMS","vlink":"PLLANTs44t4TVFZ6i8fIu0wOBv3FVUMc89"},    
+        {"title": "MULTIMEDIA SYSTEMS","vlink":"PLyH7UFQzuDWcUknjhXF4MRAB4GimqMjYY"},    
+        {"title": "MACHINE LEARNING (ML)","vlink":"PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw "}   
+        
     ],
     "sem6":
     [
-        {"title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
-        {"title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
-        {"title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
-        {"title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
+        {"title": "CRYPTOGRAPHY AND SYSTEM SECURITY","vlink":"PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII"},
+        {"title": "SYSTEM PROGRAMMING AND COMPILER CONSTRUCTION","vlink":"PLmTa8pFVIi6fYw4aG8cUDvQnS6D3z9Su7"},
+        {"title": "SOFTWARE ENGINEERING (SE)","vlink":"PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2"},
+        {"title": "DIGITAL SIGNAL PROCESSING","vlink":"PL9567DFCA3A66F299"},
+        {"title": "DATA WAREHOUSING AND MINING","vlink":"PL09DGz_tVz8JeskyJijmuq7X0t9mP2IwR"},   
+        {"title": "SOFT COMPUTING","vlink":"PLJ5C_6qdAvBFqAYS0P9INAogIMklG8E-9"}
     ]
 }
