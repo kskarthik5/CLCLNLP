@@ -57,8 +57,13 @@ p {
   border: 1px solid #b4babe;
   padding: 10px 14px;
   border-radius: 4px;
+<<<<<<< HEAD
   width: 20vw;
   margin-right:-167vw;
+=======
+  width: 370px;
+  margin-right:-170vw;
+>>>>>>> 5d70b94f53ac9afd57e6458b36162963d2b55f13
   text-align:center;
   background-color:white;
   color:black;
@@ -82,7 +87,7 @@ header, footer, section {
   z-index: 10; }
 
   footer{
-    width:10vw
+    width:10vw;
     margin-right:0px;
     border:none;
   }
@@ -92,7 +97,7 @@ section {
 footer {
   /* position: relative;  */
   position: absolute; 
-  background-color:black;
+  background-color: #efefef;
   /* margin-right: -200px; */
 }
 
@@ -283,6 +288,7 @@ header{
 section{
   height:0px;
 }
+<<<<<<< HEAD
 body, footer{
   background-color: white;
 }
@@ -291,4 +297,8 @@ footer{
   width: 67.5vw;
   /* background-color: black;
   height: 10vh; */
+=======
+body{
+  background-color: #efefef;
+>>>>>>> 5d70b94f53ac9afd57e6458b36162963d2b55f13
 }

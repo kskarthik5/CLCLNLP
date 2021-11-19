@@ -69,16 +69,17 @@ app.post('/', async (req, res) => {
 })
 app.post('/signup', async (req, res) => {
 	const {name,username, password:plainTextPassword, sem, language} = req.body
-
-	if (!username || typeof username !== 'string') {
-		return res.json({ status: 'error', error: 'Invalid username' })
-	}
-	if (username == await User.findOne({ username }).lean()) {
-		return res.json({ status: 'error', error: 'Invalid username' })
-	}
 	const password = await bcrypt.hash(plainTextPassword, 10)
-
 	try {
+		if (!username || typeof username !== 'string') {
+			return res.json({ status: 'error', error: 'Invalid username' })
+		}
+		if (username == await User.findOne({ username }).lean()) {
+			return res.json({ status: 'error', error: 'Invalid username' })
+		}
+		if (parseInt(sem)>8||parseInt(sem)<1) {
+			return res.json({ status: 'error', error: 'Invalid Semester' })
+		}
 		const response = await User.create({
 			name,
             username,
@@ -94,18 +95,29 @@ app.post('/signup', async (req, res) => {
 		}
 		throw error
 	}
+		return res.json({ status: 'ok' })
 
-	res.json({ status: 'ok' })
 })
-app.post('/dashboard', async (req, res) => {
+app.post('/auth', async (req, res) => {
 	const { token } = req.body;
-	console.log(token);
+	console.log("here")
 	try {
-	
+		console.log("here")
 		const user = jwt.verify(token, JWT_SECRET)
 		const userid = user.username;
-		console.log("user: "+userid);
+		console.log("auth success for user: "+userid);
 	} catch (error) {
+		res.json({ status: 'error'});
+	}
+})
+app.post("/getSem", async (req, res) => {
+	const { token } = req.body;
+	try {
+		const user = jwt.verify(token, JWT_SECRET)
+		const sem = user.sem;
+		res.json({data : sem});
+	} catch (error) {
+		console.log(error)
 		res.json({ status: 'error'});
 	}
 })
@@ -132,20 +144,36 @@ app.post("/courses/:id",async (req, res) => {
     const lang=req.params.id;
 	const url = req.originalUrl;
 	if(lang=='cpp'){
-	const result=material.cpp;
-    res.json({data: result});
+		const result=material.cpp;
+    	res.json({data: result});
 	}
 	if(lang=='java'){
-	const result=material.java;
-    res.json({data: result});
+		const result=material.java;
+    	res.json({data: result});
 	}
 	if(lang=='python'){
-	const result=material.python;
-    res.json({data: result});
+		const result=material.python;
+    	res.json({data: result});
+	}
+	if(lang=='js'){
+		const result=material.js;
+		res.json({data: result});
 	}
 	if(lang=='sem3'){
-	const result=material.sem3;
-	res.json({data: result});
+		const result=material.sem3;
+		res.json({data: result});
+	}
+	if(lang=='sem4'){
+		const result=material.sem4;
+		res.json({data: result});
+	}
+	if(lang=='sem5'){
+		const result=material.sem5;
+		res.json({data: result});
+	}
+	if(lang=='sem6'){
+		const result=material.sem6;
+		res.json({data: result});
 	}
 })
 app.get("/dashboard", (req, res) => {
@@ -173,9 +201,25 @@ app.post("/courses/:id/player/:no",async (req, res) => {
 	const result=material.python;
     res.json({data: result[num]});
 	}
+	if(lang=='js'){
+	const result=material.js;
+	res.json({data: result[num]});
+	}
 	if(lang=='sem3'){
 	const result=material.sem3;
 	res.json({data: result[num]});
+	}
+	if(lang=='sem4'){
+		const result=material.sem4;
+		res.json({data: result[num]});
+	}
+	if(lang=='sem5'){
+		const result=material.sem5;
+		res.json({data: result[num]});
+	}
+	if(lang=='sem6'){
+		const result=material.sem6;
+		res.json({data: result[num]});
 	}
 })
 app.post('/db', async (req, res) => {
