@@ -97,14 +97,14 @@ app.post('/signup', async (req, res) => {
 
 	res.json({ status: 'ok' })
 })
-app.post('/dashboard', async (req, res) => {
+app.post('/auth', async (req, res) => {
 	const { token } = req.body;
-	console.log(token);
+	console.log("here")
 	try {
-	
+		console.log("here")
 		const user = jwt.verify(token, JWT_SECRET)
 		const userid = user.username;
-		console.log("user: "+userid);
+		console.log("auth success for user: "+userid);
 	} catch (error) {
 		res.json({ status: 'error'});
 	}
