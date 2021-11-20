@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const bodyParser = require('body-parser')
 //const Router = require("./routes")
 const User = require('./model');
+const Course = require('./cmodel');
 const bcrypt=require('bcryptjs');
 const jwt=require('jsonwebtoken');
 const material=require('./material.json');//study material json
@@ -77,7 +78,7 @@ app.post('/signup', async (req, res) => {
 		if (username == await User.findOne({ username }).lean()) {
 			return res.json({ status: 'error', error: 'Invalid username' })
 		}
-		if (parseInt(sem)>8||parseInt(sem)<1) {
+		if (parseInt(sem)>8||parseInt(sem)<1||parseInt(sem).length()!=0) {
 			return res.json({ status: 'error', error: 'Invalid Semester' })
 		}
 		const response = await User.create({
@@ -98,6 +99,13 @@ app.post('/signup', async (req, res) => {
 		return res.json({ status: 'ok' })
 
 })
+app.post('/cdb', async (req, res) => {
+	const cid=req.body;
+	const course= await Course.findOne(cid).lean();
+	console.log(course);
+	res.json({data:course});
+
+});
 app.post('/auth', async (req, res) => {
 	const { token } = req.body;
 	console.log("here")

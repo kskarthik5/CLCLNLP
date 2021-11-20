@@ -1,63 +1,63 @@
 {
     "cpp": [
-    {"title": "INTRODUCTION TO C++ PROGRAMMING","vlink":"PLwXbGyE9aR4MiC9xrqUn209a3wV9Ciaab"},
-    {"title": "DESIGNING GUI APPLICATIONS WITH GTK","vlink":"PL2i17lRog5pBe7t9zJdFdugQ6bxgjntJD"},
-    {"title": "GAME DEVELOPMENT WITH C++","vlink":"PLv8DnRaQOs58puPPWHXuGHJOtKVduVcct"},
-    {"title": "WEB WITH C++","vlink":"PLzTP3s658k6_4WmEEwOhm-vOR2_RolHLr"}
+    {"cid":"1","title": "INTRODUCTION TO C++ PROGRAMMING","vlink":"PLwXbGyE9aR4MiC9xrqUn209a3wV9Ciaab"},
+    {"cid":"2","title": "DESIGNING GUI APPLICATIONS WITH GTK","vlink":"PL2i17lRog5pBe7t9zJdFdugQ6bxgjntJD"},
+    {"cid":"3","title": "GAME DEVELOPMENT WITH C++","vlink":"PLv8DnRaQOs58puPPWHXuGHJOtKVduVcct"},
+    {"cid":"4","title": "WEB WITH C++","vlink":"PLzTP3s658k6_4WmEEwOhm-vOR2_RolHLr"}
     ],
     "java":[
-    {"title":"INTRODUCTION TO JAVA PROGRAMMING","vlink":"PLwXbGyE9aR4O1fKj9wlDU6SBS8SUvBLYa"},
-    {"title":"GUI USING JAVA","vlink":"PLsyeobzWxl7pVZdyDXj0arOdTzo4MYekh"},
-    {"title":"WEB DEV USING JAVA","vlink":"PLNPi-ByLMIQiNZsfM8Gg7ywuX93a-dYHA"},
-    {"title":"APP DEV USING JAVA","vlink":"PL_c9BZzLwBRJLm0QETVj_XcN4jRsV4LkR"}
+    {"cid":"5","title":"INTRODUCTION TO JAVA PROGRAMMING","vlink":"PLwXbGyE9aR4O1fKj9wlDU6SBS8SUvBLYa"},
+    {"cid":"6","title":"GUI USING JAVA","vlink":"PLsyeobzWxl7pVZdyDXj0arOdTzo4MYekh"},
+    {"cid":"7","title":"WEB DEV USING JAVA","vlink":"PLNPi-ByLMIQiNZsfM8Gg7ywuX93a-dYHA"},
+    {"cid":"8","title":"APP DEV USING JAVA","vlink":"PL_c9BZzLwBRJLm0QETVj_XcN4jRsV4LkR"}
     ],
     "python":
     [
-    {"title": "INTRODUCTION TO PYTHON PROGRAMMING","vlink":"PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"},
-    {"title": "GUI USING PYTHON ","vlink":"PLwXbGyE9aR4OUMbxkKjy61WcOTX-PPNoN"},
-    {"title": "WEB DEV USING DJANGO PYTHON ","vlink":"PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3"},
-    {"title": "INTRODUCTION TO DATA SCIENCE USING PYTHON ","vlink":"PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV"},
-    {"title": "INTRODUCTION TO MACHINE LEARNING USING PYTHON ","vlink":"PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v"},
-    {"title": "APP DEV USING FLUTTER ","vlink":"PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ"}
+    {"cid":"9","title": "INTRODUCTION TO PYTHON PROGRAMMING","vlink":"PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"},
+    {"cid":"10","title": "GUI USING PYTHON ","vlink":"PLwXbGyE9aR4OUMbxkKjy61WcOTX-PPNoN"},
+    {"cid":"11","title": "WEB DEV USING DJANGO PYTHON ","vlink":"PLQVvvaa0QuDe9nqlirjacLkBYdgc2inh3"},
+    {"cid":"12","title": "INTRODUCTION TO DATA SCIENCE USING PYTHON ","vlink":"PLeo1K3hjS3us_ELKYSj_Fth2tIEkdKXvV"},
+    {"cid":"13","title": "INTRODUCTION TO MACHINE LEARNING USING PYTHON ","vlink":"PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v"},
+    {"cid":"14","title": "APP DEV USING FLUTTER ","vlink":"PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ"}
     ],
     "js":
     [
-        {"title": "INTROUCTION TO JAVASCRIPT","vlink":"PLqq-6Pq4lTTYFJxC9NLJ7dSTI5Z1WWB6K"},
-        {"title": "WEB DEVLOPMENT USING JAVASCRIPT","vlink":"PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV"},
-        {"title": "NODE JS AND EXPRESS JS TUTORIAL","vlink":"PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU"},
-        {"title": "REACT JS TUTORIAL","vlink":"PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3"}  
+        {"cid":"15","title": "INTROUCTION TO JAVASCRIPT","vlink":"PLqq-6Pq4lTTYFJxC9NLJ7dSTI5Z1WWB6K"},
+        {"cid":"16","title": "WEB DEVLOPMENT USING JAVASCRIPT","vlink":"PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV"},
+        {"cid":"17","title": "NODE JS AND EXPRESS JS TUTORIAL","vlink":"PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU"},
+        {"cid":"18","title": "REACT JS TUTORIAL","vlink":"PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3"}  
     ],
     "sem3":
     [
-        {"title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
-        {"title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
-        {"title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
-        {"title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
+        {"cid":"19","title": "COMPUTER ORGANIZATION AND ARCHITECTURE (COA)","vlink":"PLxCzCOWd7aiHMonh3G6QNKq53C6oNXGrX"},
+        {"cid":"20","title": "DATABASE MANAGEMENT SYSTEMS (DBMS)","vlink":"PLwXbGyE9aR4O3u_A5j9sYSk6wxThY_xsO"},
+        {"cid":"21","title": "DATA STRUCTURES (DS)","vlink":"PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j"},
+        {"cid":"22","title": "DIGITAL LOGIC AND DESIGN ANALYSIS (DLDA)","vlink":"PLEbnTDJUr_IdITOdOXupPTpOh_Xa8emfw"}    
     ],
     "sem4":
     [
-        {"title": "DESIGN AND ANALYSIS OF ALGORITHMS (DAA)","vlink":"PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa"},
-        {"title": "OPERATING SYSTEM (OS)","vlink":"PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"},
-        {"title": "COMPUTER NETWORKS (CN)","vlink":"PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"},
-        {"title": "COMPUTER GRAPHICS (CG)","vlink":"PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T"}    
+        {"cid":"23","title": "DESIGN AND ANALYSIS OF ALGORITHMS (DAA)","vlink":"PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa"},
+        {"cid":"24","title": "OPERATING SYSTEM (OS)","vlink":"PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p"},
+        {"cid":"25","title": "COMPUTER NETWORKS (CN)","vlink":"PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"},
+        {"cid":"26","title": "COMPUTER GRAPHICS (CG)","vlink":"PLYwpaL_SFmcAtxMe7ahYC4ZYjQHun_b-T"}    
     ],
     "sem5":
     [
-        {"title": "THEORY OF COMPUTATION (TOC)","vlink":"PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev"},
-        {"title": "INTRODUCTION TO INTELLIGENT SYSTEMS (AI)","vlink":"PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI"},
-        {"title": "ADVANCED OPERATING SYSTEM (AOS)","vlink":"PLAwxTw4SYaPkKfusBLVfklgfdcB3BNpwX"},
-        {"title": "ADVANCED DBMS","vlink":"PLLANTs44t4TVFZ6i8fIu0wOBv3FVUMc89"},    
-        {"title": "MULTIMEDIA SYSTEMS","vlink":"PLyH7UFQzuDWcUknjhXF4MRAB4GimqMjYY"},    
-        {"title": "MACHINE LEARNING (ML)","vlink":"PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw "}   
+        {"cid":"27","title": "THEORY OF COMPUTATION (TOC)","vlink":"PLBlnK6fEyqRgp46KUv4ZY69yXmpwKOIev"},
+        {"cid":"28","title": "INTRODUCTION TO INTELLIGENT SYSTEMS (AI)","vlink":"PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI"},
+        {"cid":"29","title": "ADVANCED OPERATING SYSTEM (AOS)","vlink":"PLAwxTw4SYaPkKfusBLVfklgfdcB3BNpwX"},
+        {"cid":"30","title": "ADVANCED DBMS","vlink":"PLLANTs44t4TVFZ6i8fIu0wOBv3FVUMc89"},    
+        {"cid":"31","title": "MULTIMEDIA SYSTEMS","vlink":"PLyH7UFQzuDWcUknjhXF4MRAB4GimqMjYY"},    
+        {"cid":"32","title": "MACHINE LEARNING (ML)","vlink":"PLeo1K3hjS3uvCeTYTeyfe0-rN5r8zn9rw "}   
         
     ],
     "sem6":
     [
-        {"title": "CRYPTOGRAPHY AND SYSTEM SECURITY","vlink":"PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII"},
-        {"title": "SYSTEM PROGRAMMING AND COMPILER CONSTRUCTION","vlink":"PLmTa8pFVIi6fYw4aG8cUDvQnS6D3z9Su7"},
-        {"title": "SOFTWARE ENGINEERING (SE)","vlink":"PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2"},
-        {"title": "DIGITAL SIGNAL PROCESSING","vlink":"PL9567DFCA3A66F299"},
-        {"title": "DATA WAREHOUSING AND MINING","vlink":"PL09DGz_tVz8JeskyJijmuq7X0t9mP2IwR"},   
-        {"title": "SOFT COMPUTING","vlink":"PLJ5C_6qdAvBFqAYS0P9INAogIMklG8E-9"}
+        {"cid":"33","title": "CRYPTOGRAPHY AND SYSTEM SECURITY","vlink":"PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII"},
+        {"cid":"34","title": "SYSTEM PROGRAMMING AND COMPILER CONSTRUCTION","vlink":"PLmTa8pFVIi6fYw4aG8cUDvQnS6D3z9Su7"},
+        {"cid":"35","title": "SOFTWARE ENGINEERING (SE)","vlink":"PLxCzCOWd7aiEed7SKZBnC6ypFDWYLRvB2"},
+        {"cid":"36","title": "DIGITAL SIGNAL PROCESSING","vlink":"PL9567DFCA3A66F299"},
+        {"cid":"37","title": "DATA WAREHOUSING AND MINING","vlink":"PL09DGz_tVz8JeskyJijmuq7X0t9mP2IwR"},   
+        {"cid":"38","title": "SOFT COMPUTING","vlink":"PLJ5C_6qdAvBFqAYS0P9INAogIMklG8E-9"}
     ]
 }
