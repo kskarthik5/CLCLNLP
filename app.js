@@ -78,7 +78,7 @@ app.post('/signup', async (req, res) => {
 		if (username == await User.findOne({ username }).lean()) {
 			return res.json({ status: 'error', error: 'Invalid username' })
 		}
-		if (parseInt(sem)>8||parseInt(sem)<1||parseInt(sem).length()!=0) {
+		if (parseInt(sem)>8||parseInt(sem)<1) {
 			return res.json({ status: 'error', error: 'Invalid Semester' })
 		}
 		const response = await User.create({
