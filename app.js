@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const bodyParser = require('body-parser')
 //const Router = require("./routes")
 const User = require('./model');
-const Course = require('./cmodel');
 const bcrypt=require('bcryptjs');
 const jwt=require('jsonwebtoken');
 const material=require('./material.json');//study material json
@@ -44,7 +43,7 @@ app.get("/dashboard", (req, res) => {
     const url = req.originalUrl;
     res.sendFile('/html/dashboard.html',{root: __dirname });
 })
-app.post('/loginapi', async (req, res) => {
+app.post('/', async (req, res) => {
 	const { username, password } = req.body
 	const user = await User.findOne({ username }).lean()
 
@@ -99,15 +98,11 @@ app.post('/signup', async (req, res) => {
 		return res.json({ status: 'ok' })
 
 })
-app.post('/cdb', async (req, res) => {
-	const cid=req.body;
-	const course= await Course.findOne(cid).lean();
-	res.json({data:course});
-
-});
 app.post('/auth', async (req, res) => {
 	const { token } = req.body;
+	console.log("here")
 	try {
+		console.log("here")
 		const user = jwt.verify(token, JWT_SECRET)
 		const userid = user.username;
 		console.log("auth success for user: "+userid);
@@ -141,6 +136,7 @@ app.get("/about", (req, res) => {
 })
 app.get("/courses/:id", (req, res) => {
     const lang=req.params.id;
+	console.log(lang);
 	const url = req.originalUrl;
     res.sendFile('/html/courses.html',{root: __dirname });
 })
@@ -188,9 +184,16 @@ app.get("/courses/:id/player/:no", (req, res) => {
     const url = req.originalUrl;
     res.sendFile('/youtubeapi/index.html',{root: __dirname });
 })
+
+app.get("/linkedin.html", (req, res) => {
+	const url = req.originalUrl;
+	res.sendFile('/html/linkedin.html',{root: __dirname });
+     })
+
 app.post("/courses/:id/player/:no",async (req, res) => {
     const lang=req.params.id;
 	const num=req.params.no;
+	console.log(lang);
 	const url = req.originalUrl;
 	if(lang=='cpp'){
 	const result=material.cpp;
@@ -231,6 +234,7 @@ app.post('/db', async (req, res) => {
 	try {
 	
 		const user =jwt.verify(token, JWT_SECRET)
+		console.log(user);
 		const username = user.username;
 		const name=user.name;
 		const sem=user.sem;
@@ -241,17 +245,6 @@ app.post('/db', async (req, res) => {
 	} catch (error) {
 		res.json({ status: error});
 	}
-})
-app.post('/increment',async (req,res) =>{
-	const cid=req.body;
-	const course= await Course.findOne(cid).lean();
-	const idc=course.cid;
-	const visits=(parseInt(course.visits)+1).toString();
-	const newdata={ $set: {'visits': visits}};
-	Course.findOneAndUpdate({'cid':idc},newdata, function(err, doc) {
-		if (err) return console.log(500, {error: err});
-	});
-	res.json({status: 'ok'})
 })
 app.listen(process.env.PORT || port, () => {
 	console.log("listening 8080...");

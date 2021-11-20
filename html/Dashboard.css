@@ -141,6 +141,10 @@
   .section {
     grid-area: section;
   }
+
+  .contain {
+    display: none;
+  }
   .section ul {
     margin-left: 2vw;
     margin-top: 1.5vh;
