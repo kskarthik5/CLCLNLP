@@ -10,6 +10,16 @@ const lang=temp.substring(temp.indexOf("/courses"));
 const result = await fetch(lang, {
     method: 'POST',
 }).then((res) => res.json())
+const cid=result.data.cid;
+const result2=await fetch('/increment', {
+    method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            cid
+        })
+}).then((res) => res.json());
 var playlistId = result.data.vlink;
 console.log(playlistId);
 $(document).ready(function () {

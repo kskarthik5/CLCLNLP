@@ -8,13 +8,14 @@ async function load(){
     data=result.data;
         data.forEach(async (obj,i) => {
             const cid=obj.cid;
-            const result2 = await fetch('/cdb', {
+            const results = await fetch('/cdb', {
                 method:'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({cid:cid})
             }).then((res) => res.json())
+            const result2=JSON.stringify(results.data)
             const inhtml='<div class="col-xl-4 col-lg-4 col-md-6"> \
             <div class="single-course mb-70"> \
                 <div class="course-img">\
@@ -26,14 +27,14 @@ async function load(){
                     </div>\
                     <div class="course-cap-bottom d-flex justify-content-between">\
                         <ul>\
-                            <li><i class="ti-user"></i>'+result2.data.visits+'</li>\
+                            <li><i class="ti-user"></i>'+JSON.parse(result2).visits+'</li>\
                         </ul>\
                         <span></span>\
                     </div>\
                 </div>\
             </div>\
             </div>';
-            console.log(result.data.visits);
+            console.log(" sfas  "+result2);
             document.getElementById("nav-tabContent").appendChild(document.createRange().createContextualFragment(inhtml));
         });   
     //document.getElementById("nav-tabContent").innerHTML=inhtml;

@@ -5,8 +5,7 @@ async function login(event) {
     event.preventDefault()
     const username = document.getElementById('username').value
     const password = document.getElementById('password').value
-
-    const result = await fetch('/', {
+    const result = await fetch('/loginapi', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
