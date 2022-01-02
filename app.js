@@ -13,8 +13,8 @@ const material=require('./material.json');//study material json
 app.use(express.json());
 app.use('/', express.static(path.join(__dirname)))
 app.use(bodyParser.json())
-const JWT_SECRET="umomdasjdbajksdbaksbdeadfaojfadhsbflasjfnasjfksdbfjksbinsideioabso;fbjsbfasnjdfkanslasfgaysasbdjsdasdooogabooogaalkfjasklfn"
-const uri = "mongodb+srv://admin:admin12345@mycluster.b5ij3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const JWT_SECRET=process.env.JWTSecret;
+const uri = process.env.MongoSecret;
 
 mongoose.connect(uri,
   {
